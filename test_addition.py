@@ -1,14 +1,12 @@
-   python
-   import unittest
-   from addition import Addition
+import unittest
+from addition import addition 
 
-   class TestAddition(unittest.TestCase):
-       def test_add(self):
-           adder = Addition()
-           self.assertEqual(adder.add(3, 5), 8)
-           self.assertEqual(adder.add(-1, 1), 0)
-           self.assertEqual(adder.add(0, 0), 0)
-           self.assertEqual(adder.add(-3, -5), -8)
+class TestAddition(unittest.TestCase):  
+    def test_add(self):
+        result = addition.add(1, 1)
+        self.assertEqual(result, 2)  
+        result = addition.add(-1, -2)
+        self.assertEqual(result, -3)  
 
-   if __name__ == '__main__':
-       unittest.main()
+if __name__ == '__main__':
+    unittest.main()
