@@ -1,4 +1,5 @@
-   python
-   class Addition:
-       def add(self, a, b):
-           return a + b
+class addition:
+  
+  def add(a, b):
+    return a + b
+  
